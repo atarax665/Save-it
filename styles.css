@@ -104,3 +104,33 @@ h1 {
     font-size: 16px;
     padding: 20px;
 }
+.bin-icon {
+    position: absolute;
+    right: 40px;
+    top: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    color: #fff;
+}
+
+.bin-icon.disabled {
+    color: #888;
+    cursor: not-allowed;
+}
+
+.action-btn {
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #007bff;
+    border: none;
+    background: none;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.action-btn:hover {
+    color: #0056b3;
+}
