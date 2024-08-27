@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Save it</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <h1>
+    Save it
+    <span class="pen-icon">&#9998;</span>
+    <span class="note-icon">&#128221;</span>
+  </h1>
+  <div class="container">
+    <div class="main-view active">
+      <div id="snippets"></div>
+      <div id="noSnippetsMessage" class="no-snippets-message" style="display: none;">No saved snippets</div>
+    </div>
+
+    <div class="create-view">
+      <div class="input-group">
+        <input type="text" id="snippetTitle" placeholder="Title">
+      </div>
+      <div class="input-group">
+        <textarea id="newSnippet" placeholder="Snippet content"></textarea>
+      </div>
+      <button id="addButton" class="button">Add</button>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

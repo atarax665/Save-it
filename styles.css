@@ -1,0 +1,106 @@
+body {
+    width: 320px;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+}
+h1 {
+    font-size: 18px;
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    position: relative;
+}
+.pen-icon, .note-icon {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    color: #fff;
+}
+.note-icon {
+    display: none;
+}
+  .container {
+    padding: 10px;
+}
+.main-view, .create-view {
+    display: none;
+}
+.main-view.active, .create-view.active {
+    display: block;
+}
+.accordion {
+    cursor: pointer;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    background-color: #fff;
+    position: relative;
+    font-size: 16px;
+}
+.accordion:hover {
+    background-color: #f0f0f0;
+}
+.panel {
+    display: none;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+    background-color: #fafafa;
+}
+.copy-btn {
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #007bff;
+    border: none;
+    background: none;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+.copy-btn:hover {
+    color: #0056b3;
+}
+.input-group {
+    margin-bottom: 10px;
+}
+.input-group input, .input-group textarea {
+    width: calc(100% - 22px);
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    margin-right: 2px;
+}
+.input-group textarea {
+    height: 80px;
+    resize: none;
+}
+.button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.button:hover {
+    background-color: #0056b3;
+}
+.no-snippets-message {
+    text-align: center;
+    color: #888;
+    font-size: 16px;
+    padding: 20px;
+}
